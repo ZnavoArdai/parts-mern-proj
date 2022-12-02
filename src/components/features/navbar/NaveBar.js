@@ -8,20 +8,17 @@ import SideBar from "../SideBar/SideBar";
 function NavBar() {
   return (
     <Navbar
-      collapseOnSelect
-      expand="lg"
-      variant="dark"
-      bg="red"
-      className="text-dark container"
+    style={{background:"#032B45"}}
+      className="text-dark  d-flex justify-content-between"
     >
         <Navbar.Brand className="acc w-25  ">
           <Image src="logo192.png" width={60} />
         </Navbar.Brand>
         <Nav>
 
-            <button>
-                <SideBar/>
-            </button>
+          
+           <SideBar/>
+          
         </Nav>
       
        
