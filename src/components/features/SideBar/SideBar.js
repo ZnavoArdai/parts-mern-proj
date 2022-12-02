@@ -13,9 +13,9 @@ function SideBar() {
   return (
     <>
       <Button variant="primary" onClick={handleShow} className="me-2" style={{background:"#032B45" ,border:"none",fontSize:20}}>
-     דשבורד {"   "}<GiHamburgerMenu size={30}/> 
+     Dashboard {"   "}<GiHamburgerMenu size={30}/> 
       </Button>
-      <Offcanvas show={show} onHide={handleClose} placement="end">
+      <Offcanvas  show={show} onHide={handleClose} placement="end">
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Offcanvas</Offcanvas.Title>
         </Offcanvas.Header>
