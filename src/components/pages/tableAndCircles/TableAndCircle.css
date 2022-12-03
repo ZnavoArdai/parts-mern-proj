@@ -37,6 +37,7 @@ align-items: center;
     border-top:  solid black;
     color:#4ba4a1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   

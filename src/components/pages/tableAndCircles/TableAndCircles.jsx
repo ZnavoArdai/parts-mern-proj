@@ -17,7 +17,10 @@ const TableAndCircles = () => {
     if(item.quantity==78){
         return item.quantity
     }
+
 })}</h2>
+    <span className="insideSpan text-dark">out of 234</span>
+
             </div>
           </div>
         </div>
@@ -31,6 +34,8 @@ const TableAndCircles = () => {
         return item.priceOfProducts
     }
 })}</h2>
+    <span className="insideSpan text-dark">out of 423</span>
+
             </div>
           </div>
         </div>
