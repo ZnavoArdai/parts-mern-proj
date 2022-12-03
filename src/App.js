@@ -13,7 +13,7 @@ function App() {
       <DataProvider>
       <NavBar />
       <Headrs/>
-      {/* <BarChart/> */}
+      <BarChart/>
 
       </DataProvider>
    
