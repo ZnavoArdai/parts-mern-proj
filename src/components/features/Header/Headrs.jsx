@@ -13,14 +13,14 @@ import { dataContext } from "../../../context/dataContext";
 import "./Headrs.css";
 
 const Headrs = () => {
-  const { data } = useContext(dataContext);
+  const { orders,products,info,stores,category } = useContext(dataContext);
 
   return (
     <div className="headersContainer container-fluid mt-5 text-center ">
       <div>
         Products
         <div className="content">
-          {data.products.length}
+          {products.length}
           <BsBasket
             size={40}
             color={"black"}
@@ -32,7 +32,7 @@ const Headrs = () => {
       <div>
         Stores
         <div className="content">
-          {data.stores.length}
+          {stores.length}
           <BiStore
             size={40}
             color={"black"}
@@ -43,7 +43,7 @@ const Headrs = () => {
       <div>
         Information
         <div className="content">
-          {data.info.length}
+          {info.length}
           <AiOutlineInfoCircle
             size={40}
             color={"black"}
@@ -54,7 +54,7 @@ const Headrs = () => {
       <div>
         category's
         <div className="content">
-          {data.category.length}
+          {category.length}
           <BsListTask
             size={40}
             color={"black"}
@@ -65,7 +65,7 @@ const Headrs = () => {
       <div>
         Departments
         <div className="content">
-          {data.orders.length}
+          {orders.length}
           <BsListTask
             size={40}
             color={"black"}

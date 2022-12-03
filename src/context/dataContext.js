@@ -8,23 +8,25 @@ import { getOrders } from "../services/ordersService";
 export const dataContext = createContext();
 
 const DataProvider = ({ children }) => {
-  const [data, setDate] = useState({
-    products: [],
-    stores: [],
-    info: [],
-    category: [],
-    orders: [],
-  });
+  const [orders, setOrders] = useState([]);
+  const [products, setProducts] = useState([]);
+  const [category, setCategory] = useState([]);
+  const [info, setInfo] = useState([]);
+  const [stores, setStores] = useState([]);
+
+
 
   useEffect(() => {
-    getProudcts().then((res) => setDate({ ...data, products: res.result }));
-    getStores().then((res) => setDate({ ...data, stores: res.result }));
-    getInfo().then((res) => setDate({ ...data, info: res.result }));
-    getCategory().then((res) => setDate({ ...data, category: res.result }));
-    getOrders().then((res) => setDate({ ...data, orders: res.result }));
+    getProudcts().then((res) => setProducts(res.result ));
+    getStores().then((res) => stores(res.result));
+    getInfo().then((res) => info(res.result));
+    getCategory().then((res) => setCategory( res.result ));
+    getOrders().then((res) => setOrders(res.result ));
   }, []);
+ 
+
   return (
-    <dataContext.Provider value={{ data }}>{children}</dataContext.Provider>
+    <dataContext.Provider value={{ orders,products,info,category,stores }}>{children}</dataContext.Provider>
   );
 };
 
