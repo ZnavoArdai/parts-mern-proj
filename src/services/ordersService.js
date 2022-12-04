@@ -6,4 +6,4 @@ export const getOrders =async () => {
 
     const orders=await respo.json();
     return orders;
-}
+};
