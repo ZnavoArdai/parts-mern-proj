@@ -6,4 +6,4 @@ export const getInfo =async () => {
     const info= await respo.json();
     return info;
 
-}
+};
